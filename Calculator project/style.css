@@ -1,0 +1,97 @@
+html{  
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 90%;
+}
+
+*, 
+*::before, /*before and after are pseudo elements*/
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body{  /*body is the parent of all elements*/
+    align-items: center;
+    background:linear-gradient(320deg, #ee0505, #fbfbfb, #0915f7);
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-display: swap;
+    height: inherit;
+    justify-content: center;
+}
+
+.wrapper{ /*wrapper is the parent of all elements*/
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color: #232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.30);
+    border: 1px solid rgba(255, 255, 255, 0.34);
+    flex-basis: 400px;
+    height: 540px;
+    padding: 20px 35px;
+}
+
+.screen{ /*screen is the parent of all elements*/
+    backdrop-filter: bulr(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color: #232323;
+    font-size: 35px;
+    overflow: auto;
+    padding: 20px;
+    text-align: right;
+    width: 326px;
+
+}
+
+.calc-button-row{ /*calc-button-row is the parent of all elements*/
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 0;
+}
+
+.calc-button{  /*calc-button is the parent of all elements*/
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    color:#232323;
+    flex-basis: 20%;
+    font-family: inherit;
+    font-size: 24px;
+    height: 60px;;
+}
+
+.calc-button:hover{  /*calc-button is the parent of all elements*/
+    background: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+}
+
+.calc-button:active{  /*calc-button is the parent of all elements*/
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.calc-button:last-child{  /*calc-button is the parent of all elements*/
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255, 255, 255, 0.01);
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    background: #d73a3a;
+    color: white;
+}
+
+.tripple{ /*tripple is the parent of all elements*/
+    flex-basis: 47%;
+}
